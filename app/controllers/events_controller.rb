@@ -12,7 +12,7 @@ class EventsController < ApplicationController
   end
   end 
 
-
+  payload["Authorization"] = "token " + "9db9ca3440e535d90408a32a9c03d415979da910"
   def destroy
     flash[:alert] = "event was successfully deleted"
     @event.destroy
